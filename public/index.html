@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/style.css">
+  <title>AVH FEC Proxy</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+  <img class="nav" src='./img/nav.png'>
+  <div class='productContainer'>
+    <div id="ProductInfo">ProductInfo</div>
+    <div id="Checkout"></div>
+  </div>
+  <div id="relateditems"></div>
+  <div id="Reviews"></div>
+
+  <script src="/lib/react.development.js"></script>
+  <script src="/lib/react-dom.development.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" />
+
+  <!-- Michelle:9001 -->
+  <script src="https://s3-us-west-1.amazonaws.com/parmezon/bundle.js"></script>
+
+  <!-- Matt:7777 -->
+  <script src="https://s3-us-west-1.amazonaws.com/mattminwoolee-checkout/bundle/bundle.js"></script>
+
+  <!-- Sonia:4042 -->
+  <script src="https://s3.amazonaws.com/fec-proxy/bundle.js"></script>
+
+  <!-- AVH:1337 -->
+  <script src="https://s3-us-west-1.amazonaws.com/avh-fec-component/bundle.js"></script>
+
+
+  <!-- Michelle:9001 -->
+  <script>
+    ReactDOM.render(
+      React.createElement(ProductInfo),
+      document.getElementById('ProductInfo')
+    );
+  </script>
+
+  <!-- Matt:7777 -->
+  <script>
+    ReactDOM.render(
+      React.createElement(Checkout),
+      document.getElementById('Checkout')
+    );
+  </script>
+
+  <!-- Sonia:4042 -->
+  <script>
+    ReactDOM.render(
+      React.createElement(relatedItems),
+      document.getElementById('relateditems')
+    );
+  </script>
+
+  <!-- AVH:1337 -->
+  <script>
+    ReactDOM.render(
+      React.createElement(Reviews),
+      document.getElementById('Reviews')
+    );
+  </script>
+
+</body>
+
+</html>
+<!-- see: https://reactjs.org/docs/react-without-jsx.html -->
